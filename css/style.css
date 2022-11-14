@@ -2,12 +2,19 @@
 GENERAL STYLE */
 
 /* * ROOT */
+:root{
+    /* ? COLORS */
+    --main-text-color:black;
+    --lighter-main-text-color: #767676;
+    --secondary-text-color:white;
+}
 
 
 
 /* * TAG HTML */
 body{
     font-family: Arial;
+    color: var(--main-text-color);
 }
 
 
@@ -28,6 +35,16 @@ body{
 SPECIFIC STYLES */
 
 /* * HEADER */
+
+/* ? ASIDE */
+header aside{
+    background-color: var(--main-text-color);
+}
+
+header aside .my-img-container img{
+    height: 15px;
+}
+
 
 /* ? NAVBAR */
 nav{
