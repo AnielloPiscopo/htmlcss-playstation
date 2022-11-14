@@ -32,6 +32,10 @@ body{
     color: var(--main-text-color);
 }
 
+.my-img-container img{
+    width: 100%;
+}
+
 
 
 /* * CLASSES */
