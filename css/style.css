@@ -8,10 +8,14 @@ main .jumbotron>*{
     background-color: rebeccapurple;
 }
 
-.my-cols-container >*{
+.my-cols-container >*:not(#ps-introduction .my-cols-container>*){
     background-color: blue;
     border-left: 1px solid;
     border-right: 1px solid;
+}
+
+#ps-introduction .my-cols-container .my-col.active{
+    border-bottom: 3px solid blue;
 }
 
 
@@ -83,7 +87,14 @@ main .jumbotron>*{
     padding-top: 25rem;
 }
 
-/* ? UPCOMING GAMES */
+/* ? PS INTRODUCTION SECTION */
+#ps-introduction .my-cols-container img{
+    width: 100%;
+}
+
+
+
+/* ? UPCOMING GAMES SECTION*/
 #upcoming-games .my-cols-container img{
     border-radius: 1rem;
 }
@@ -119,17 +130,29 @@ RESPONSIVENESS */
         width: 50%;
     }
 
-    #ps-introduction .my-imgs-container>*{
+    #ps-introduction .my-cols-container>*{
         width: calc(100%/5 - 1.6rem);
         margin: 0 1rem;
     }
 
-    #ps-introduction .my-imgs-container>*:first-of-type{
+    #ps-introduction .my-cols-container img{
+        width: 50%;
+    }
+
+    #ps-introduction .my-cols-container>*:first-of-type{
         margin-left: 0;
     }
 
-    #ps-introduction .my-imgs-container>*:last-of-type{
+    #ps-introduction .my-cols-container>*:last-of-type{
         margin-right: 0;
+    }
+
+    main section.ps-offert .my-img-container[class*='float']{
+        width: 40%;
+    }
+    
+    main section.ps-offert .my-text-content[class*='float']{
+        width: 60%;
     }
 }
 
@@ -142,12 +165,19 @@ RESPONSIVENESS */
     /* * SPECIFIC CHANGES */
 
     /* ? MAIN */
-    #ps-introduction .my-img-container{
+    #ps-introduction .my-img-container[class*='float']{
         width: 60%;
     }
     
-    #ps-introduction .my-text-content{
+    #ps-introduction .my-text-content[class*='float']{
         width: 40%;
-        padding-top: 15rem;
+    }
+
+    main section.ps-offert .my-img-container[class*='float']{
+        width: 50%;
+    }
+    
+    main section.ps-offert .my-text-content[class*='float']{
+        width: 50%;
     }
 }
