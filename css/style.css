@@ -69,6 +69,9 @@ nav{
 
 
 /* * MAIN */
+main .jumbotron>*{
+    padding-top: 25rem;
+}
 
 
 
