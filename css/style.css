@@ -14,6 +14,12 @@ body{
 
 /* * CLASSES */
 
+/* ? OTHER */
+.my-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
 
 
 
