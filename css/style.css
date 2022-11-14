@@ -13,6 +13,8 @@ main .jumbotron>*{
 
 
 
+
+
 /* *-------------------------------------------------------------------
 GENERAL STYLE */
 
@@ -77,6 +79,9 @@ main .jumbotron>*{
     padding-top: 25rem;
 }
 
+/* ? PS INTRODUCTION SECTION */
+
+
 
 
 /* * FOOTER */
@@ -92,3 +97,37 @@ main .jumbotron>*{
 
 /* *------------------------------------------------------------------------------------------------------
 RESPONSIVENESS */
+
+/* * MD */
+@media screen and (min-width:768px){
+    /* * SPECIFIC CHANGES */
+
+    /* ? MAIN */
+    #ps-introduction .my-img-container{
+        width: 50%;
+    }
+    
+    #ps-introduction .my-text-content{
+        padding-top: 5rem;
+        width: 50%;
+    }
+}
+
+
+
+
+
+/* * LG */
+@media screen and (min-width:992px){
+    /* * SPECIFIC CHANGES */
+
+    /* ? MAIN */
+    #ps-introduction .my-img-container{
+        width: 60%;
+    }
+    
+    #ps-introduction .my-text-content{
+        width: 40%;
+        padding-top: 15rem;
+    }
+}
