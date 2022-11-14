@@ -147,11 +147,11 @@ RESPONSIVENESS */
         margin-right: 0;
     }
 
-    main section.ps-offert .my-img-container[class*='float']{
+    main section.ps-offert .my-img-container{
         width: 40%;
     }
     
-    main section.ps-offert .my-text-content[class*='float']{
+    main section.ps-offert .my-text-content{
         width: 60%;
     }
 }
@@ -165,19 +165,19 @@ RESPONSIVENESS */
     /* * SPECIFIC CHANGES */
 
     /* ? MAIN */
-    #ps-introduction .my-img-container[class*='float']{
+    #ps-introduction .my-img-container{
         width: 60%;
     }
     
-    #ps-introduction .my-text-content[class*='float']{
+    #ps-introduction .my-text-content{
         width: 40%;
     }
 
-    main section.ps-offert .my-img-container[class*='float']{
+    main section.ps-offert .my-img-container{
         width: 50%;
     }
     
-    main section.ps-offert .my-text-content[class*='float']{
+    main section.ps-offert .my-text-content{
         width: 50%;
     }
 }
