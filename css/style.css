@@ -4,11 +4,11 @@ main .jumbotron>*{
     background-color: red;
 }
 
-.my-imgs-container{
+.my-cols-container{
     background-color: rebeccapurple;
 }
 
-.my-imgs-container >*{
+.my-cols-container >*{
     background-color: blue;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -83,7 +83,10 @@ main .jumbotron>*{
     padding-top: 25rem;
 }
 
-/* ? PS INTRODUCTION SECTION */
+/* ? UPCOMING GAMES */
+#upcoming-games .my-cols-container img{
+    border-radius: 1rem;
+}
 
 
 
