@@ -1,16 +1,5 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL CHANGES*/
-
-.my-cols-container:not(#ps-introduction .my-cols-container){
-    background-color: rebeccapurple;
-}
-
-.my-cols-container >*:not(#ps-introduction .my-cols-container>*){
-    background-color: blue;
-    border-left: 1px solid;
-    border-right: 1px solid;
-}
-
 #utilities{
     background-color: blueviolet;
 }
@@ -131,7 +120,7 @@ main{
     margin-top: 116px;
 }
 
-main p:not(.jumbotron p,#ps-plus p,#ps-now p){
+main p:not(.jumbotron p,#ps-plus p,#ps-now p,#upcoming-games p){
     font-size: 1.1rem;
     color: var(--lighter-main-text-color);
     font-weight: bold;
@@ -171,7 +160,7 @@ main .jumbotron .my-btn{
 }
 
 #ps-introduction .my-cols-container .my-col:not(.my-col.active){
-    filter: grayscale(10%);
+    filter: grayscale(70%) opacity(67%);
 }
 
 #ps-introduction .my-cols-container .my-col.active{
@@ -186,6 +175,15 @@ main>section.jumbotron{
 
 
 /* ? UPCOMING GAMES SECTION*/
+#upcoming-games{
+    background-color: var(--dark-bg-color);
+    color: var(--secondary-text-color);
+}
+
+#upcoming-games p{
+    font-size: 1.5rem;
+}
+
 #upcoming-games .my-cols-container img{
     border-radius: 1rem;
 }
