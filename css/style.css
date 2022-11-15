@@ -108,6 +108,15 @@ main .jumbotron>*{
 
 /* * FOOTER */
 
+/* ? UTILITIES SECTION */
+#utilities .my-logo{
+    width: 25%;
+}
+
+#utilities .my-language .my-icon.my-img-container{
+    width: 1.2rem;
+}
+
 
 
 
@@ -120,9 +129,23 @@ main .jumbotron>*{
 /* *------------------------------------------------------------------------------------------------------
 RESPONSIVENESS */
 
+/* * SM */
+@media screen and (min-width:576px){
+    /* * SPECIFIC STYLES */
+
+    /* ? FOOTER */
+    #utilities .my-logo{
+        width: 20%;
+    }
+}
+
+
+
+
+
 /* * MD */
 @media screen and (min-width:768px){
-    /* * SPECIFIC CHANGES */
+    /* * SPECIFIC STYLES */
 
     /* ? MAIN */
     #ps-introduction .my-img-container{
@@ -158,6 +181,12 @@ RESPONSIVENESS */
     main section.ps-offert .my-text-content{
         width: 60%;
     }
+
+
+    /* ? FOOTER */
+    #utilities .my-logo{
+        width: 15%;
+    }
 }
 
 
@@ -166,7 +195,7 @@ RESPONSIVENESS */
 
 /* * LG */
 @media screen and (min-width:992px){
-    /* * SPECIFIC CHANGES */
+    /* * SPECIFIC STYLES */
 
     /* ? MAIN */
     #ps-introduction .my-img-container{
@@ -183,5 +212,15 @@ RESPONSIVENESS */
     
     main section.ps-offert .my-text-content{
         width: 50%;
+    }
+
+
+    /* ? FOOTER */
+    #utilities .my-flex-element{
+        width: 50%;
+    }
+
+    #utilities .my-logo{
+        width: 20%;
     }
 }
