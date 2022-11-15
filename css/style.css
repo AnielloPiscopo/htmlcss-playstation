@@ -1,7 +1,7 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL CHANGES*/
 
-.my-cols-container{
+.my-cols-container:not(#ps-introduction .my-cols-container){
     background-color: rebeccapurple;
 }
 
@@ -9,10 +9,6 @@ MOMENTANEAL CHANGES*/
     background-color: blue;
     border-left: 1px solid;
     border-right: 1px solid;
-}
-
-#ps-introduction .my-cols-container .my-col.active{
-    border-bottom: 3px solid blue;
 }
 
 #utilities{
@@ -37,6 +33,9 @@ GENERAL STYLE */
     --main-text-color:black;
     --lighter-main-text-color: #767676;
     --secondary-text-color:white;
+    --dark-bg-color:#363636;
+    --jumbotron-btn-bg-color:#cd3d0f;
+    --main-btn-bg-color:#2b8ad6;
 }
 
 
@@ -50,6 +49,11 @@ body{
 
 
 /* * CLASSES */
+
+/* ? TEXT */
+.my-title{
+    font-size: 2.5rem;
+}
 
 /* ? OTHER */
 .my-btn:focus{
@@ -69,6 +73,10 @@ body{
 SPECIFIC STYLES */
 
 /* * HEADER */
+header{
+    background-color: var(--secondary-text-color);
+    opacity: 0.9;
+}
 
 /* ? ASIDE */
 header aside{
@@ -85,8 +93,15 @@ header nav{
     font-family: Helvetica;
 }
 
+header nav ul .my-nav-link{
+    color: var(--main-text-color);
+}
+
 header nav ul .my-nav-link.my-btn{
     width: 5rem;
+    color: var(--secondary-text-color);
+    background-color: var(--dark-bg-color);
+    border: none;
 }
 
 header nav ul .my-nav-link.my-icon{
@@ -112,14 +127,29 @@ header nav ul .my-nav-link .my-icon.my-img-container:hover img.my-d-none{
 
 
 /* * MAIN */
+main{
+    margin-top: 116px;
+}
+
+main p:not(.jumbotron p,#ps-plus p,#ps-now p){
+    font-size: 1.1rem;
+    color: var(--lighter-main-text-color);
+    font-weight: bold;
+}
+
 main .jumbotron{
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
+    color: var(--secondary-text-color);
 }
 
 main .jumbotron>*{
     padding-top: 350px;
+}
+
+main .jumbotron .my-btn{
+    background-color: var(--jumbotron-btn-bg-color);
 }
 
 /* ? CAROUSEL SECTION */
@@ -133,6 +163,19 @@ main .jumbotron>*{
 /* ? PS INTRODUCTION SECTION */
 #ps-introduction .my-cols-container img{
     width: 100%;
+}
+
+#ps-introduction .my-subtitle{
+    font-size: 0.8rem;
+    color: var(--main-btn-bg-color);
+}
+
+#ps-introduction .my-cols-container .my-col:not(.my-col.active){
+    filter: grayscale(10%);
+}
+
+#ps-introduction .my-cols-container .my-col.active{
+    border-bottom: 3px solid var(--main-btn-bg-color);
 }
 
 
