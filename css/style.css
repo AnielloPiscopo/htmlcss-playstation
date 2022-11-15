@@ -1,8 +1,5 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL CHANGES*/
-main .jumbotron>*{
-    background-color: red;
-}
 
 .my-cols-container{
     background-color: rebeccapurple;
@@ -100,6 +97,10 @@ header nav ul .my-nav-link .my-icon.my-img-container{
     width: 0.7rem;
 }
 
+header nav ul .my-nav-link .my-icon.my-img-container:active img{
+    transform: rotate(180deg);
+}
+
 header nav ul .my-nav-link .my-icon.my-img-container:hover img.my-d-inline-block{
     display: none;
 }
@@ -111,15 +112,34 @@ header nav ul .my-nav-link .my-icon.my-img-container:hover img.my-d-none{
 
 
 /* * MAIN */
-main .jumbotron>*{
-    padding-top: 25rem;
+main .jumbotron{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
+
+main .jumbotron>*{
+    padding-top: 350px;
+}
+
+/* ? CAROUSEL SECTION */
+
+/* ? Jumbotron Section */
+#carousel .jumbotron{
+    background-image: url('../assets/img/jumbo-bg.png');
+}
+
 
 /* ? PS INTRODUCTION SECTION */
 #ps-introduction .my-cols-container img{
     width: 100%;
 }
 
+
+/* ? JUMBOTRON SECTION */
+main>section.jumbotron{
+    background-image: url('../assets/img/it-takes-two-hero-banner-desktop.jpg');
+}
 
 
 /* ? UPCOMING GAMES SECTION*/
@@ -157,6 +177,12 @@ RESPONSIVENESS */
 @media screen and (min-width:576px){
     /* * SPECIFIC STYLES */
 
+    /* ? MAIN */
+    main .jumbotron>*{
+        padding-top: 330px;
+    }
+
+
     /* ? FOOTER */
     #utilities .my-logo{
         width: 20%;
@@ -172,6 +198,10 @@ RESPONSIVENESS */
     /* * SPECIFIC STYLES */
 
     /* ? MAIN */
+    main .jumbotron>*{
+        padding-top: 300px;
+    }
+
     #ps-introduction .my-img-container{
         width: 50%;
     }
@@ -222,6 +252,10 @@ RESPONSIVENESS */
     /* * SPECIFIC STYLES */
 
     /* ? MAIN */
+    main .jumbotron>*{
+        padding-top: 320px;
+    }
+
     #ps-introduction .my-img-container{
         width: 60%;
     }
