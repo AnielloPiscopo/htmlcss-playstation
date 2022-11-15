@@ -25,6 +25,8 @@ GENERAL STYLE */
     --dark-bg-color:#363636;
     --jumbotron-btn-bg-color:#cd3d0f;
     --main-btn-bg-color:#2b8ad6;
+    --ps-plus-section-bg-color:#bebcbb;
+    --ps-plus-btn-bg-color:#d9dadc;
 }
 
 
@@ -186,6 +188,18 @@ main>section.jumbotron{
 
 #upcoming-games .my-cols-container img{
     border-radius: 1rem;
+}
+
+
+/* ? PS PLUS SECTION */
+#ps-plus{
+    background-color: var(--ps-plus-section-bg-color);
+}
+
+#ps-plus .my-btn{
+    background-color: var(--ps-plus-btn-bg-color);
+    color: var(--main-btn-bg-color);
+    border-color: var(--ps-plus-btn-bg-color)
 }
 
 
