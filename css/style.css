@@ -60,6 +60,10 @@ body{
     box-shadow: none;
 }
 
+.my-d-none{
+    display: none;
+}
+
 
 
 
@@ -80,8 +84,28 @@ header aside .my-img-container img{
 
 
 /* ? NAVBAR */
-nav{
+header nav{
     font-family: Helvetica;
+}
+
+header nav ul .my-nav-link.my-btn{
+    width: 5rem;
+}
+
+header nav ul .my-nav-link.my-icon{
+    width: 2.5rem;
+}
+
+header nav ul .my-nav-link .my-icon.my-img-container{
+    width: 0.7rem;
+}
+
+header nav ul .my-nav-link .my-icon.my-img-container:hover img.my-d-inline-block{
+    display: none;
+}
+
+header nav ul .my-nav-link .my-icon.my-img-container:hover img.my-d-none{
+    display: inline-block;
 }
 
 
