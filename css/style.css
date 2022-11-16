@@ -27,6 +27,8 @@ GENERAL STYLE */
     --main-btn-bg-color:#2b8ad6;
     --ps-plus-section-bg-color:#bebcbb;
     --ps-plus-btn-bg-color:#d9dadc;
+    --ps-now-bg-color:#161c3b;
+    --footer-utilities-section-bg-color:#00439c;
 }
 
 
@@ -203,17 +205,43 @@ main>section.jumbotron{
 }
 
 
+/* ? PS NOW SECTION */
+#ps-now{
+    background-color: var(--ps-now-bg-color);
+    color: var(--secondary-text-color);
+}
+
+#ps-now .my-btn{
+    background-color: var(--secondary-text-color);
+    color: var(--main-text-color);
+    border: var(--secondary-text-color);
+}
+
+
 
 
 /* * FOOTER */
 
 /* ? UTILITIES SECTION */
+#utilities{
+    background-color: var(--footer-utilities-section-bg-color);
+    color: var(--secondary-text-color);
+}
+
+#utilities a{
+    color: var(--secondary-text-color);
+}
+
 #utilities .my-logo{
-    width: 25%;
+    width: 20%;
 }
 
 #utilities .my-language .my-icon.my-img-container{
     width: 1.2rem;
+}
+
+#utilities img.my-logo{
+    width: 100%;
 }
 
 
@@ -240,7 +268,7 @@ RESPONSIVENESS */
 
     /* ? FOOTER */
     #utilities .my-logo{
-        width: 20%;
+        width: 15%;
     }
 }
 
@@ -294,7 +322,7 @@ RESPONSIVENESS */
 
     /* ? FOOTER */
     #utilities .my-logo{
-        width: 15%;
+        width: 10%;
     }
 }
 
@@ -334,6 +362,10 @@ RESPONSIVENESS */
     }
 
     #utilities .my-logo{
-        width: 20%;
+        width: 15%;
+    }
+
+    #utilities img.my-logo{
+        width: 75%;
     }
 }
