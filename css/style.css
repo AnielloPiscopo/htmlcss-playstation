@@ -117,6 +117,10 @@ header nav ul .my-nav-link .my-icon.my-img-container:hover img.my-d-none{
     display: inline-block;
 }
 
+header nav ul .my-search-bar .my-nav-link img:active + input{
+    display: inline-block;
+}
+
 
 
 /* * MAIN */
@@ -157,9 +161,11 @@ main .jumbotron .my-btn{
 #carousel-items .my-cols-container>*>img{
     border-radius: 1.3rem;
     padding: 0.2rem;
+    cursor: pointer;
 }
 
-#carousel-items .my-cols-container>*>img.active{
+#carousel-items .my-cols-container>*>img.active,
+#carousel-items .my-cols-container>*>img:active{
     border: 3px solid var(--main-btn-bg-color);
 }
 
@@ -174,12 +180,21 @@ main .jumbotron .my-btn{
     color: var(--main-btn-bg-color);
 }
 
+#ps-introduction .my-cols-container .my-col{
+    cursor: pointer;
+}
+
 #ps-introduction .my-cols-container .my-col:not(.my-col.active){
     filter: grayscale(70%) opacity(67%);
 }
 
 #ps-introduction .my-cols-container .my-col.active{
     border-bottom: 3px solid var(--main-btn-bg-color);
+}
+
+#ps-introduction .my-cols-container .my-col:active{
+    border-bottom: 3px solid var(--main-btn-bg-color);
+    filter: none !important;
 }
 
 
@@ -201,6 +216,7 @@ main>section.jumbotron{
 
 #upcoming-games .my-cols-container img{
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 
@@ -213,6 +229,16 @@ main>section.jumbotron{
     background-color: var(--ps-plus-btn-bg-color);
     color: var(--main-btn-bg-color);
     border-color: var(--ps-plus-btn-bg-color)
+}
+
+
+/* ? DISCOUNT SECTION */
+#discount img{
+    cursor: pointer;
+}
+
+#discount img:hover{
+    opacity: 0.8;
 }
 
 
@@ -232,6 +258,15 @@ main>section.jumbotron{
 
 
 /* * FOOTER */
+
+/* ? SOCIAL MEDIA SECTION */
+#social-media img{
+    cursor: pointer;
+}
+
+#social-media img:hover{
+    opacity: 0.8;
+}
 
 /* ? UTILITIES SECTION */
 #utilities{
@@ -344,6 +379,12 @@ RESPONSIVENESS */
 /* * LG */
 @media screen and (min-width:992px){
     /* * SPECIFIC STYLES */
+
+    /* ? HEADER */
+    header nav ul .my-search-bar .my-nav-link input{
+        left:0;
+        width: 100%;
+    }
 
     /* ? MAIN */
     main .jumbotron>*{
