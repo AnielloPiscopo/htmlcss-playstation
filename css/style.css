@@ -153,6 +153,14 @@ main .jumbotron .my-btn{
 }
 
 
+/* ? Carousel-Items Section */
+#carousel-items .my-cols-container>*>img{
+    border: 3px solid var(--main-btn-bg-color);
+    border-radius: 1.3rem;
+    padding: 0.2rem;
+}
+
+
 /* ? PS INTRODUCTION SECTION */
 #ps-introduction .my-cols-container img{
     width: 100%;
