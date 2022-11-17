@@ -162,11 +162,12 @@ main .jumbotron .my-btn{
     border-radius: 1.3rem;
     padding: 0.2rem;
     cursor: pointer;
+    border: 3px solid transparent;
 }
 
 #carousel-items .my-cols-container>*>img.active,
 #carousel-items .my-cols-container>*>img:active{
-    border: 3px solid var(--main-btn-bg-color);
+    border-color: var(--main-btn-bg-color);
 }
 
 
@@ -181,6 +182,7 @@ main .jumbotron .my-btn{
 }
 
 #ps-introduction .my-cols-container .my-col{
+    border-bottom: 3px solid transparent;
     cursor: pointer;
 }
 
@@ -189,11 +191,11 @@ main .jumbotron .my-btn{
 }
 
 #ps-introduction .my-cols-container .my-col.active{
-    border-bottom: 3px solid var(--main-btn-bg-color);
+    border-bottom-color: var(--main-btn-bg-color);
 }
 
 #ps-introduction .my-cols-container .my-col:active{
-    border-bottom: 3px solid var(--main-btn-bg-color);
+    border-bottom-color: var(--main-btn-bg-color);
     filter: none !important;
 }
 
