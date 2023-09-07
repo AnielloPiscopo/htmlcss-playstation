@@ -5,7 +5,7 @@
 </h1>
 <h3>◦ Simple recreation of Playstaion homepage made with HTML, CSS and bootstrap</h3>
 <h3>◦ Developed during the course of Full-Stack Web Developer with Boolean</h3>
-<h3>◦ Link: https://aniellopiscopo.github.io/html-css-playstation/</h3>
+<h3>◦ Link: https://aniellopiscopo.github.io/htmlcss-playstation/</h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/SVG-FFB13B.svg?style&logo=SVG&logoColor=black" alt="SVG" />
